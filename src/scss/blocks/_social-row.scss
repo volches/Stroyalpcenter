@@ -1,0 +1,29 @@
+.social-row {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.social-row li{
+    svg {
+        transition: all 0.5s;
+    }
+}
+
+.social-row li:hover {
+    svg {
+        transform: rotate(360deg);
+        stroke: $blue-color;
+    }
+}
+
+.social-row li:not(:last-child) {
+    padding-top: 2px;
+}
+
+
+.header__nav-contacts .social-row{
+    @media(max-width:1099px) {
+        display: none;
+    }
+}

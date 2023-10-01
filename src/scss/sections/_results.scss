@@ -1,0 +1,147 @@
+.results {
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    @media(max-width:799px) {
+        padding-top: 80px;
+    }
+
+    @media(max-width:599px) {
+        padding-top: 60px;
+    }
+}
+
+.results__area {
+    border-top: 1px solid $black-color;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    @media (max-width:799px) {
+        padding-top: 30px;
+        grid-template-columns: repeat(1, 3fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+.results__item {
+    grid-column: span 1;
+    grid-row: span 1;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid $black-color;
+    text-align: center;
+
+
+    font-family: 'Playfair Display SC';
+
+    span {
+        font-size: 27px;
+        min-height: 80px;
+        line-height: 1;
+
+        @media (max-width:799px){
+            min-height: unset;
+        }
+
+        @media (max-width:599px) {
+            font-size: 20px;
+        }
+
+        @media (max-width:399px) {
+            font-size: 18px;
+        }
+    }
+
+    p {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1;
+
+        @media (max-width:599px){
+            font-size: 30px;
+        }
+    }
+
+    @media(max-width:1099px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media (max-width:799px){
+        border-left: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+
+    
+}
+
+.results__item:first-child {
+    border-left: none;
+    align-items: flex-start;
+    text-align: left;
+
+    @media(max-width:1099px) {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+
+    @media (max-width:799px){
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.results__item:last-child {
+    align-items: flex-end;
+    text-align: right;
+
+    @media(max-width:1099px) {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+
+    @media (max-width:799px){
+        text-align: center;
+        align-items: center;
+    }
+
+}
+
+.results__content {
+    padding-bottom: 150px;
+
+    @media(max-width:799px) {
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    @media(max-width:599px) {
+        padding-bottom: 60px;
+    }
+}
+
+.result__item-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(51%,-47%);
+
+    @media (max-width:799px){
+        display: none;
+    }
+}
+
+
+

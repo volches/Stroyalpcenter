@@ -1,0 +1,158 @@
+.directions {
+    color: $black-color;
+    flex-shrink: 0;
+}
+
+// Directions Img
+
+.directions__img-wrapper {
+    position: relative;
+    border-radius: 10px;
+    height: 730px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width:1499px) {
+        height: 700px;
+    }
+
+    @media (max-width:999px){
+        height: 500px;
+    }
+
+    @media (max-width:799px){
+        height: 400px;
+    }
+
+    @media (max-width:599px){
+        height: 300px;
+    }
+
+    @media (max-width:399px){
+        height: 200px;
+    }
+}
+
+.directions__img {
+    width: 100%;
+    height: 730px;
+    background: url('./../img/directions/img4.jpg') center / cover no-repeat;
+    filter: grayscale(0.2);
+    transform: scale(1);
+    transform-origin: center center;
+
+    @media (max-width:1499px) {
+        height: 700px;
+    }
+
+    @media (max-width:999px){
+        width: 100%;
+        height: 500px;
+    }
+
+    @media (max-width:799px){
+        height: 400px;
+    }
+
+    @media (max-width:599px){
+        height: 300px;
+    }
+
+    @media (max-width:399px){
+        height: 200px;
+    }
+}
+
+.directions__img .mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+// Directions Row
+
+.directions__row {
+    font-family: 'Playfair Display SC';
+    position: relative;
+    display: flex;
+    height: 200px;
+
+    @media(max-width:799px) {
+        flex-direction: column;
+        height: unset;
+    }
+}
+
+.directions__column-left, .directions__column-right{
+    width: 66%;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    border-bottom: 1px solid $black-color;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    @media(max-width:1099px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media(max-width:799px){
+        width: 100%;
+        justify-content: center;
+        height: 100px;
+    }
+
+    @media (max-width:599px){
+        height: 70px;
+    }
+}
+
+.directions__column-right {
+    width: 34%;
+    justify-content: flex-end;
+
+    @media(max-width:799px){
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+}
+
+    
+
+.directions__line {
+    position: absolute;
+    width: 1px;
+    height: 130px;
+    background-color: $black-color;
+
+    right:34%;
+    bottom: 0;
+
+    @media(max-width:799px){
+        display: none;
+    }
+}
+
+.directions__icon {
+    position: absolute;
+    bottom: 0;
+    right: 34%;
+    transform: translate(50%,55%);
+
+    @media(max-width:799px){
+        display: none;
+    }
+}
+

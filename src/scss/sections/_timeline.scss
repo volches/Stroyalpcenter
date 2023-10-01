@@ -1,0 +1,14 @@
+.timeline {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.timeline__title {
+    padding-bottom: 50px;
+
+    @media (max-width:799px){
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
+

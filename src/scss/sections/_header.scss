@@ -1,0 +1,279 @@
+.header {
+    padding-bottom: 100px;
+
+    @media(max-width:1199px) {
+        padding-bottom: 80px;
+    }
+
+    @media(max-width:999px) {
+        padding-bottom: 50px;
+    }
+
+    @media(max-width:599px) {
+        padding-bottom: 30px;
+    }
+}
+
+// header__nav
+
+.header__nav-row{
+    padding-top: 20px;
+    display: flex;
+    align-items: stretch;
+    color: $black-color;
+    z-index: 8;
+
+    
+    
+}
+
+.header__nav-column-left {
+    width: 66%;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+    
+    border-right: 1px solid $black-color;
+    border-bottom: 1px solid $black-color;
+    border-bottom-right-radius: 10px;
+    transition: all 0.5s;
+
+}
+
+.header__nav-list {
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    column-gap: 65px;
+    align-items: flex-start;
+
+    @media (max-width:1199px) {
+        column-gap: 30px;
+    }
+
+    @media (max-width:1099px){
+        display: none;
+    }
+
+}
+
+
+.header__nav-list-item li + li {
+    margin-top: 15px;
+}
+
+
+
+.header__nav-list-item li {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    font-size: 20px;
+    line-height: 1;
+
+    .svg-diamond {
+        width: 15px;
+        height: 20px;
+        transition: all 1s;
+    }
+
+    a {
+        font-family: 'Playfair Display SC';
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    &:hover {
+        color:$blue-color;
+        .svg-diamond {
+            fill:$blue-color;
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    @media (max-width:1199px){
+        font-size: 18px;
+    }
+}
+
+
+.header__nav-column-right{
+    position: relative;
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 34%;
+
+    border-bottom: 1px solid $black-color;
+    border-bottom-left-radius: 10px;
+
+    @media (max-width:1399px){
+        padding-top: 18px;
+    }
+
+
+    @media (max-width:1099px){
+        padding-top: 0;
+        
+    }
+}
+
+.header__nav-column-right-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-51%,55%);
+
+    @media(max-width:799px) {
+        transform: translate(-51%,58%);
+
+        .svg-diamond{
+            width: 20px;
+            height: 30px;
+        }
+
+    }
+
+    
+
+    
+}
+
+.header__nav-contacts {
+    display: flex;
+    column-gap: 65px;
+
+    @media (max-width:1399px){
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+
+// Header center
+
+
+
+
+.header__center {
+    padding-top: 150px;
+    padding-bottom: 180px;
+
+    @media(max-width:1399px) {
+        padding-top: 120px;
+        padding-bottom: 140px;
+    }
+
+    @media(max-width:999px) {
+        padding-top: 90px;
+        padding-bottom: 110px;
+    }
+
+    @media(max-width:799px) {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    @media(max-width:599px) {
+        padding-bottom: 40px;
+    }
+
+}
+
+
+
+// header down row
+
+.header__down-row {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    font-size: 20px;
+
+    @media (max-width:799px){
+        flex-direction: column;
+    }
+
+    @media (max-width:599px) {
+        font-size: 18px;
+    }
+
+    @media (max-width:399px) {
+        font-size: 16px;
+    }
+}
+
+.header__down-column-left {
+    width: 34%;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    border-top: 1px solid $black-color;
+    border-right: 1px solid $black-color;
+
+    @media(max-width:1099px) {
+        padding-left: 0;
+        padding-right: 40px;
+    }
+
+    @media (max-width:799px){
+        width: 100%;
+        padding-right: 0;
+        border-top: none;
+        border-right: none;
+
+        display: flex;
+        align-items: flex-start;
+        column-gap: 20px;
+    }
+
+}
+
+.header__down-column-right {
+    position: relative;
+    width: 66%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    border-top: 1px solid $black-color;
+
+
+    @media(max-width:1099px){
+        padding-right: 0;
+        padding-left: 40px;
+    }
+
+
+    @media (max-width:799px){
+        width: 100%;
+        border-top: none;
+
+        display: flex;
+        align-items: flex-start;
+        column-gap: 20px;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+}
+
+.header__down-icon {
+    position: absolute;
+    top: 0;
+    left: 34%;
+    transform: translate(-50%,-45%);
+
+    @media (max-width:799px) {
+        display: none;
+    }
+}
+
+
+
+
+

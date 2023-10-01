@@ -1,0 +1,60 @@
+
+
+.btn-light {
+    font-family: 'Playfair Display SC';
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1;
+    
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    transition: all 0.5s;
+
+    .svg-arrow-up, .svg-arrow-back {
+        transition: all 1s;
+    }
+
+    &:hover {
+        color: $blue-color;
+        transform: scale(1.01);
+        .svg-arrow-up, .svg-arrow-back{
+            stroke: $blue-color;
+            transform: rotate(360deg);
+        }
+    }
+
+    @media (max-width:1199px){
+        font-size: 18px;
+    }
+}
+
+.directions .btn-light {
+    font-size: 27px;
+
+    @media(max-width:599px) {
+        font-size: 20px;
+    }
+
+    @media(max-width:399px) {
+        font-size: 18px;
+    }
+}
+
+.header__nav-column-right .btn-light {
+    @media(max-width:1099px) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+

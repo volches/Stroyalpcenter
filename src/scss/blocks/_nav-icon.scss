@@ -1,0 +1,162 @@
+// Ширина и высота линии в иконке
+$lineWidth: 80px;
+$lineHeight: 3px;
+$radius: 2px;
+$lineMargin: 7px;
+$color: #000;
+
+// // Размеры контейнера
+// $width: $lineWidth;
+// $height: $lineHeight * 3 + $lineMargin * 2;
+
+.nav-icon {
+    display: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    @media (max-width:1099px) {
+        display: block;
+        position: relative;
+        right: 0;
+        top: 30px;
+        height: 30px;
+        width: 80px;
+
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+        cursor: pointer;
+    }
+
+    @media(max-width:499px){
+        width: 40px;
+        top: 10px;
+    }
+
+}
+
+
+.nav-icon__middle {
+    position: relative;
+    width: $lineWidth;
+    height: $lineHeight;
+    border-radius: $radius;
+    background-color: $black-color;
+    transition: background-color 0.2s ease-in;
+
+    @media(max-width:499px){
+        width: 40px;
+    }
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: $lineWidth;
+        height: $lineHeight;
+        border-radius: $radius;
+        transition: background-color 0.2s ease-in, transform 0.2s ease-in, top 0.2s linear 0.2s, width 0.2s;
+        background-color: $black-color;
+
+        @media(max-width:499px){
+            width: 40px;
+        }
+    }
+
+
+    &::before {
+        top: -($lineHeight+$lineMargin);
+    }
+
+    &::after {
+        top: $lineHeight+$lineMargin;
+    }
+}
+
+/* Active state */
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+    background-color: transparent;
+
+    &::before, &::after {
+        top: 0;
+        left: 0;
+        transition: width 0.2s, top 0.2s linear, transform 0.2s ease-in 0.2s;
+        background-color: $black-color;
+    }
+
+    &::before {
+        
+        transform: rotate(45deg);
+        width: 40px;
+        
+    }
+
+    &::after {
+        
+        transform: rotate(-45deg);
+        width: 40px;
+        
+    }
+}
+
+.nav-icon.nav-icon--active {
+    position: fixed;
+    right: 80px;
+    top: 65px;
+    z-index: 12;
+
+    @media (max-width:1139px) {
+        right: 53px;
+    }
+
+    @media (max-width:899px){
+        top: 30px;
+        right: 45px;
+    }
+
+
+    @media (max-width:639px) {
+        right: 27px;
+        
+    }
+}
+
+
+// header-top
+
+.header-top .nav-icon__middle {
+    background-color: $black-color;
+
+    &::before, &::after {
+        content: "";
+        background-color: $black-color;
+    }
+
+  }
+
+  .header-top .nav-icon.nav-icon--active {
+    position: fixed;
+    right: 80px;
+    top: 40px;
+    z-index: 12;
+
+    @media (max-width:1139px) {
+        right: 53px;
+    }
+
+    @media (max-width:899px){
+        top: 30px;
+        right: 45px;
+    }
+
+
+    @media (max-width:639px) {
+        right: 27px;
+        
+    }
+}
+  
+

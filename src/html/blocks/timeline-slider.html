@@ -1,0 +1,23 @@
+<div class="swiper timeline-slider">
+    <div class="swiper-wrapper timeline-slider__wrapper">
+        @@loop('./../blocks/elements/timeline-slider__item.html', './data/timeline-slider.json')
+    </div>
+    <!-- btns -->
+    <div class="timeline-slider__btn">
+        <button class="swiper-button-prev timeline-slider__btn-prev btn-light">
+            <svg class="svg-arrow-back">
+                <use href="./svg/svg-sprite.svg#svg-arrow-back" />
+            </svg>
+            <p>Назад</p>
+        </button>
+        <button class="swiper-button-next timeline-slider__btn-next btn-light">
+            <p>Вперед</p>
+            <svg class="svg-arrow-up">
+                <use href="./svg/svg-sprite.svg#svg-arrow-up" />
+            </svg>
+        </button>
+    </div>
+    <!-- Add Pagination -->
+    <div class="timeline-slider__pagination">
+    </div>
+</div>

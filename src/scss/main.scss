@@ -1,0 +1,16 @@
+/* Base */
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+@import "./base/svg";
+@import "./base/swiper-bundle";
+
+/* Blocks */
+@import "./blocks/*.scss";
+
+/* Sections */
+@import "./sections/*.scss";
