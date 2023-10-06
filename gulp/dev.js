@@ -75,6 +75,16 @@ gulp.task('svg:dev', function(){
 });
 
 
+gulp.task('php:dev', function(){
+    return gulp
+    .src('./src/php/**/*')
+    .pipe(changed('./build/php/'))
+    // .pipe(svgSprite())
+    .pipe(gulp.dest('./build/php/'))
+
+});
+
+
 gulp.task('fonts:dev', function(){
     return gulp
     .src('./src/fonts/**/*')
@@ -132,6 +142,7 @@ gulp.task('watch:dev', function(){
     gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
     gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
     gulp.watch('./src/svg/**/*', gulp.parallel('svg:dev'));
+    gulp.watch('./src/php/**/*', gulp.parallel('php:dev'));
 });
 
 

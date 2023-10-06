@@ -103,8 +103,15 @@
         }
 
         @media (max-width:399px) {
-            font-size: 18px;
+            font-size: 16px;
         }
+    }
+
+    p{
+        @media (max-width:599px){
+            // width: 66%;
+        }
+        
     }
 
     span{
@@ -162,7 +169,14 @@
     z-index: 5;
 
     @media (max-width:799px){
+        left: unset;
+        transform: translateX(0);
         display: block;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 

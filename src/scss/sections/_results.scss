@@ -3,11 +3,17 @@
     padding-bottom: 100px;
 
     @media(max-width:799px) {
-        padding-top: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     @media(max-width:599px) {
         padding-top: 60px;
+    }
+
+    @media (max-width:399px){
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -57,7 +63,7 @@
         }
 
         @media (max-width:399px) {
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 
@@ -129,6 +135,10 @@
 
     @media(max-width:599px) {
         padding-bottom: 60px;
+    }
+
+    @media (max-width:399px){
+        padding-bottom: 30px;
     }
 }
 

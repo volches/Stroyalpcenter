@@ -1,0 +1,90 @@
+
+
+// Projects Img
+
+.contacts__img-wrapper {
+    position: relative;
+    border-radius: 10px;
+    height: 730px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width:1499px) {
+        height: 700px;
+    }
+
+    @media (max-width:999px){
+        height: 500px;
+    }
+
+    @media (max-width:799px){
+        height: 400px;
+    }
+
+    @media (max-width:599px){
+        height: 300px;
+    }
+
+    @media (max-width:399px){
+        height: 200px;
+    }
+}
+
+.contacts__img {
+    width: 100%;
+    height: 730px;
+    background: url('./../img/contacts/img1.jpg') center / cover no-repeat;
+    filter: grayscale(0.7);
+    transform: scale(1);
+    transform-origin: center center;
+
+    @media (max-width:1499px) {
+        height: 700px;
+    }
+
+    @media (max-width:999px){
+        width: 100%;
+        height: 500px;
+    }
+
+    @media (max-width:799px){
+        height: 400px;
+    }
+
+    @media (max-width:599px){
+        height: 300px;
+    }
+
+    @media (max-width:399px){
+        height: 200px;
+    }
+}
+
+.contacts__img .mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contacts__content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @media (max-width:799px){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+
+.contacts__form {
+    margin-top: 30px;
+    // border-bottom: 1px solid $black-color;
+}
+

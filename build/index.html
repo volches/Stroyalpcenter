@@ -22,93 +22,124 @@
 		<header class="header">
     <div class="container">
       <!-- header__nav -->
-      <div class="header__nav-row">
-        <div class="header__nav-column-left">
+      <div class="header__up-row">
+        <div class="header__up-column-left">
           <div class="logo">
-            <img
-              src="./img/logo/logo2.png"
-              width="120px"
-              height="120px"
-              alt="logo"
-            />
-          </div>
-          <ul class="header__nav-list" id="header__nav-list">
-            <ul class="header__nav-list-item">
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Услуги</a>
-              </li>
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Статьи</a>
-              </li>
-            </ul>
-            <ul class="header__nav-list-item">
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Проекты</a>
-              </li>
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Контакты</a>
-              </li>
-            </ul>
-            <ul class="header__nav-list-item">
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Как мы работаем</a>
-              </li>
-            </ul>
-          </ul>
+    <img
+      src="./img/logo/logo2.png"
+      width="120px"
+      height="120px"
+      alt="logo"
+    />
+</div>
+          <ul class="header-nav">
+    <ul class="header-nav__list">
+        <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#" class="nav__a">Услуги</a>
+</li>
+        <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#" class="nav__a">Статьи</a>
+</li>
+    </ul>
+    <ul class="nav__list">
+        <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#" class="nav__a">Проекты</a>
+</li>
+        <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#" class="nav__a">Контакты</a>
+</li>
+    </ul>
+    <ul class="nav__list">
+        <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#timeline" class="nav__a">Как мы работаем</a>
+</li>
+    </ul>
+  </ul>
         </div>
-        <div class="header__nav-column-right">
-          <div class="header__nav-column-right-icon">
+        <div class="header__up-column-right">
+          <div class="header__up-column-right-icon">
             <svg class="svg-diamond">
               <use href="./svg/svg-sprite.svg#svg-diamond" />
             </svg>
           </div>
-          <nav class="nav" id="nav">
-            <ul class="nav__list-add">
-              <li><a href="#" class="nav__a">Услуги</a></li>
-              <li><a href="#" class="nav__a">Статьи</a></li>
-              <li><a href="#" class="nav__a">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="header__nav-contacts">
-            <button class="btn-light">
+          <nav class="nav-mob" id="nav-mob">
+  <div class="nav-mob__wrapper">
+    <ul class="nav-mob__list">
+      <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#" class="nav__a">Услуги</a>
+</li>
+      <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#" class="nav__a">Статьи</a>
+</li>
+      <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#timeline" class="nav__a">Как мы работаем</a>
+</li>
+      <li class="nav-item">
+    <svg class="svg-diamond">
+      <use href="./svg/svg-sprite.svg#svg-diamond" />
+    </svg>
+    <a href="#" class="nav__a">Контакты</a>
+</li>
+    </ul>
+    <div class="logo">
+    <img
+      src="./img/logo/logo2.png"
+      width="120px"
+      height="120px"
+      alt="logo"
+    />
+</div>
+    <span class="nav-mob__title" >Стройальпцентр</span>
+  </div>  
+</nav>
+          <div class="header__up-contacts">
+            <button data-modal-button="modal-1" class="btn-light mb-1" type="button">
               <p>Напишите нам</p>
               <svg class="svg-arrow-up">
                 <use href="./svg/svg-sprite.svg#svg-arrow-up" />
               </svg>
             </button>
             <ul class="social-row">
-              <li><a href="https://api.whatsapp.com/send?phone=79259312107"
-                target="blank">
-                <svg class="svg-whatsapp">
-                  <use href="./svg/svg-sprite.svg#svg-whatsapp" />
-                </svg>
-              </a></li>
-              <li><a href="https://telegram.me/foxy_view"
-                target="blank">
-                <svg class="svg-telegram">
-                  <use href="./svg/svg-sprite.svg#svg-telegram" />
-                </svg>
-              </a></li>
-              <li><a href="tel:+79259312007">
-                <svg class="svg-phone">
-                  <use href="./svg/svg-sprite.svg#svg-phone" />
-                </svg>
-              </a></li>
+              <li class="social-row__item" ><a href="https://api.whatsapp.com/send?phone=79259312107"
+    target="blank">
+    <svg class="svg-whatsapp">
+      <use href="./svg/svg-sprite.svg#svg-whatsapp" />
+    </svg>
+</a></li><li class="social-row__item" ><a href="https://telegram.me/foxy_view"
+    target="blank">
+    <svg class="svg-telegram">
+      <use href="./svg/svg-sprite.svg#svg-telegram" />
+    </svg>
+</a></li><li class="social-row__item" ><a href="tel:+79259312007"
+    target="blank">
+    <svg class="svg-phone">
+      <use href="./svg/svg-sprite.svg#svg-phone" />
+    </svg>
+</a></li>
             </ul>
           </div>
           <button class="nav-icon" id="nav-icon">
@@ -139,6 +170,55 @@
         </div>
       </div>
     </div>
+    <div id="modal-1" data-modal class="fade-block none">
+    <div class="modal-window">
+      <button data-modal-close type="button" class="modal-window__close">
+        <svg class="svg-x">
+          <use href="./svg/svg-sprite.svg#svg-x" />
+        </svg>
+      </button>
+      <div class="modal-window__title">
+        <h4 class="h4">Форма записи</h4>
+      </div>
+      <form action="" class="modal-form">
+        <div class="modal-form__item">
+          <input
+            class="modal-form__input"
+            type="text"
+            name="tel"
+            placeholder="Телефон*"
+          />
+        </div>
+        <div class="modal-form__item">
+          <input
+            class="modal-form__input"
+            type="text"
+            name="name"
+            placeholder="Ваше имя"
+          />
+        </div>
+        <div class="modal-form__item">
+          <input
+            class="modal-form__input"
+            type="text"
+            name="time"
+            placeholder="Время для звонка"
+          />
+        </div>
+        <p class="modal__text">
+          Нажимая кнопку, Вы соглашаетесь с обработкой персональных данных.
+        </p>
+        <div class="modal-form__item">
+          <button class="btn-light" type="submit">
+            <p>Отправить</p>
+            <svg class="svg-arrow-up">
+              <use href="./svg/svg-sprite.svg#svg-arrow-up" />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </header>
 		<!-- Directions -->
 <section class="directions" id="directions">
@@ -177,7 +257,7 @@
 <section class="results">
     <div class="container">
       <div class="results__content">
-        <p class="title-middle">Стройальпцентр выполнил работы в интересах сотен организаций.</p>
+        <p class="content">Стройальпцентр выполнил работы в интересах сотен организаций.</p>
       </div>
       <div class="results__area">
         <div class="results__item">
@@ -215,10 +295,10 @@
     </div>
 </section>
 		<!-- timeline -->
-<section class="timeline">
+<section class="timeline" id="timeline">
     <div class="container">
-      <div class="timeline__title">
-        <p class="title-middle">Как мы взаимодействуем с нашими клиентами?</p>
+      <div class="timeline__content">
+        <p class="content">Как мы взаимодействуем с нашими клиентами?</p>
       </div>
       <div class="swiper timeline-slider">
     <div class="swiper-wrapper timeline-slider__wrapper">
@@ -333,6 +413,53 @@
     <div class="timeline-slider__pagination">
     </div>
 </div>
+    </div>
+</section>
+		<section class="contacts">
+    <div class="container">
+        <div class="contacts__img-wrapper">
+            <div class="contacts__img"></div>
+            <div class="mask"></div>
+        </div>
+        <div class="contacts__content">
+            <p class="content">Давайте обсудим Ваш объект!</p>
+        </div>
+        <div class="contacts__form">
+            <form action="#" class="form">
+    <div class="form-item">
+      <span class="fake-placeholder">Ваш Email</span>
+      <input name="email" type="email" class="form-field" />
+    </div>
+    <div class="form-item">
+      <span class="fake-placeholder">Сообщение</span>
+      <textarea
+        class="form-field"
+        name="message"
+        id="#"
+        cols="30"
+        rows="9"
+      ></textarea>
+    </div>
+    <div class="form-item">
+      <!-- <input class="button" type="submit" value="Отправить" /> -->
+      <button class="btn-light" type="submit">
+        <p>Отправить</p>
+        <svg class="svg-arrow-up">
+          <use href="./svg/svg-sprite.svg#svg-arrow-up" />
+        </svg>
+      </button>
+    </div>
+</form>
+  <div id="answer"></div> 
+        </div>
+    </div>
+</section>
+		<section class="footer">
+    <div class="container">
+        <div class="footer__copyright">
+            <p> &copy; 2023 Стройальпцентр
+            </p>
+        </div>
     </div>
 </section>
 		<script src="./js/index.bundle.js"></script>

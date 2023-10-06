@@ -99,6 +99,15 @@ gulp.task('svg:docs', function(){
 
 });
 
+gulp.task('php:docs', function(){
+    return gulp
+    .src('./src/php/**/*')
+    .pipe(changed('./docs/php/'))
+    // .pipe(svgSprite())
+    .pipe(gulp.dest('./docs/php/'))
+
+});
+
 
 gulp.task('fonts:docs', function(){
     return gulp

@@ -1,0 +1,14 @@
+[
+    {
+        "link":"https://api.whatsapp.com/send?phone=79259312107",
+        "icon": "svg-whatsapp" 
+    },
+    {
+        "link":"https://telegram.me/foxy_view",
+        "icon": "svg-telegram" 
+    },
+    {
+        "link":"tel:+79259312007",
+        "icon": "svg-phone" 
+    }
+]

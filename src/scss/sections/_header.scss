@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     padding-bottom: 100px;
 
     @media(max-width:1199px) {
@@ -16,7 +17,7 @@
 
 // header__nav
 
-.header__nav-row{
+.header__up-row{
     padding-top: 20px;
     display: flex;
     align-items: stretch;
@@ -27,7 +28,7 @@
     
 }
 
-.header__nav-column-left {
+.header__up-column-left {
     width: 66%;
     padding-bottom: 10px;
 
@@ -42,7 +43,7 @@
 
 }
 
-.header__nav-list {
+.header-nav {
     padding-top: 20px;
     position: relative;
     display: flex;
@@ -60,48 +61,8 @@
 }
 
 
-.header__nav-list-item li + li {
-    margin-top: 15px;
-}
 
-
-
-.header__nav-list-item li {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-
-    font-size: 20px;
-    line-height: 1;
-
-    .svg-diamond {
-        width: 15px;
-        height: 20px;
-        transition: all 1s;
-    }
-
-    a {
-        font-family: 'Playfair Display SC';
-        text-decoration: none;
-        display: inline-block;
-    }
-
-    &:hover {
-        color:$blue-color;
-        .svg-diamond {
-            fill:$blue-color;
-            transform: rotate(360deg);
-        }
-        
-    }
-
-    @media (max-width:1199px){
-        font-size: 18px;
-    }
-}
-
-
-.header__nav-column-right{
+.header__up-column-right{
     position: relative;
     padding-top: 10px;
     padding-left: 40px;
@@ -121,7 +82,7 @@
     }
 }
 
-.header__nav-column-right-icon {
+.header__up-column-right-icon {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -142,7 +103,7 @@
     
 }
 
-.header__nav-contacts {
+.header__up-contacts {
     display: flex;
     column-gap: 65px;
 
@@ -225,6 +186,7 @@
         padding-right: 0;
         border-top: none;
         border-right: none;
+        padding-top: 0;
 
         display: flex;
         align-items: flex-start;

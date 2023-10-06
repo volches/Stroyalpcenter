@@ -1,0 +1,48 @@
+
+
+
+.nav-item + .nav-item {
+    margin-top: 15px;
+}
+
+
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    font-size: 20px;
+    line-height: 1;
+
+    .svg-diamond {
+        width: 15px;
+        height: 20px;
+        transition: all 1s;
+    }
+
+    a {
+        font-family: 'Playfair Display SC';
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    &:hover {
+        color:$blue-color;
+        .svg-diamond {
+            fill:$blue-color;
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    @media (max-width:1199px){
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+

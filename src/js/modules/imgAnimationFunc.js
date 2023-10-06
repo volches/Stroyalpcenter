@@ -31,6 +31,20 @@ function imgAnimationFunc() {
             // markers: true
         } 
     })
+
+    gsap.to('.contacts__img', {
+        scale: 1.3,
+        rotation:3,
+        duration:5,
+        scrollTrigger: {
+            trigger:'.contacts__img',
+            start:"top 90%",
+            end: "bottom 1%",
+            scrub: 4,
+            toggleActions: "restart none none none",
+            // markers: true
+        } 
+    })
     
 }
 

@@ -1,0 +1,82 @@
+.fade-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $form-color;
+    z-index: 9;
+}
+
+#modal-1 {
+    height: 100vh;
+}
+
+.modal-window {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 350px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: $background-color;
+    color: $black-color;
+    
+
+    @media(max-width:599px){
+        width: 270px;
+    }
+}
+
+.modal-window__close {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+.modal-window__title {
+    text-align: center;
+    margin-bottom: 20px;
+
+    font-family: 'Playfair Display SC';
+    font-size: 20px;
+
+}
+
+
+.modal__text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+
+}
+
+
+.modal-form__item .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-form__input {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid $form-color;
+    padding-right: 5px;
+    line-height: 24px;
+    color: $form-color;
+
+    font-family: 'Playfair Display SC';
+    font-size: 18px;
+}
+
+
+
+.modal-form__item + .modal-form__item {
+    margin-top: 20px;
+}

@@ -1,93 +1,27 @@
 <header class="header">
     <div class="container">
       <!-- header__nav -->
-      <div class="header__nav-row">
-        <div class="header__nav-column-left">
-          <div class="logo">
-            <img
-              src="./img/logo/logo2.png"
-              width="120px"
-              height="120px"
-              alt="logo"
-            />
-          </div>
-          <ul class="header__nav-list" id="header__nav-list">
-            <ul class="header__nav-list-item">
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Услуги</a>
-              </li>
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Статьи</a>
-              </li>
-            </ul>
-            <ul class="header__nav-list-item">
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Проекты</a>
-              </li>
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Контакты</a>
-              </li>
-            </ul>
-            <ul class="header__nav-list-item">
-              <li>
-                <svg class="svg-diamond">
-                  <use href="./svg/svg-sprite.svg#svg-diamond" />
-                </svg>
-                <a href="#" class="nav__a">Как мы работаем</a>
-              </li>
-            </ul>
-          </ul>
+      <div class="header__up-row">
+        <div class="header__up-column-left">
+          @@include('./../blocks/logo.html')
+          @@include('./../blocks/header-nav.html')
         </div>
-        <div class="header__nav-column-right">
-          <div class="header__nav-column-right-icon">
+        <div class="header__up-column-right">
+          <div class="header__up-column-right-icon">
             <svg class="svg-diamond">
               <use href="./svg/svg-sprite.svg#svg-diamond" />
             </svg>
           </div>
-          <nav class="nav" id="nav">
-            <ul class="nav__list-add">
-              <li><a href="#" class="nav__a">Услуги</a></li>
-              <li><a href="#" class="nav__a">Статьи</a></li>
-              <li><a href="#" class="nav__a">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="header__nav-contacts">
-            <button class="btn-light">
+          @@include('./../blocks/nav-mob.html')
+          <div class="header__up-contacts">
+            <button data-modal-button="modal-1" class="btn-light mb-1" type="button">
               <p>Напишите нам</p>
               <svg class="svg-arrow-up">
                 <use href="./svg/svg-sprite.svg#svg-arrow-up" />
               </svg>
             </button>
             <ul class="social-row">
-              <li><a href="https://api.whatsapp.com/send?phone=79259312107"
-                target="blank">
-                <svg class="svg-whatsapp">
-                  <use href="./svg/svg-sprite.svg#svg-whatsapp" />
-                </svg>
-              </a></li>
-              <li><a href="https://telegram.me/foxy_view"
-                target="blank">
-                <svg class="svg-telegram">
-                  <use href="./svg/svg-sprite.svg#svg-telegram" />
-                </svg>
-              </a></li>
-              <li><a href="tel:+79259312007">
-                <svg class="svg-phone">
-                  <use href="./svg/svg-sprite.svg#svg-phone" />
-                </svg>
-              </a></li>
+              @@loop('./../blocks/elements/social-row__item.html', './data/social-row-header.json')
             </ul>
           </div>
           <button class="nav-icon" id="nav-icon">
@@ -118,4 +52,5 @@
         </div>
       </div>
     </div>
+    @@include('./../blocks/modal.html')
 </header>

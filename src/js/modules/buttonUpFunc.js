@@ -1,6 +1,6 @@
 function buttonUpFunc(){
     const logoButtonNav = document.querySelector(".logo-button");
-    const logoButtonStart = 450;
+    const logoButtonStart = 350;
 
 	window.addEventListener ('scroll' , navOnScroll);
 	function navOnScroll (params) {

@@ -1,8 +1,10 @@
 <!-- timeline -->
-<section class="timeline">
+<section class="timeline" id="timeline">
     <div class="container">
-      <div class="timeline__title">
-        <p class="title-middle">Как мы взаимодействуем с нашими клиентами?</p>
+      <div class="timeline__content">
+        @@include('./../blocks/content.html', {
+          "text": "Как мы взаимодействуем с нашими клиентами?"
+        })
       </div>
       @@include('./../blocks/timeline-slider.html')
     </div>
